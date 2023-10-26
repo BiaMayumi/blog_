@@ -17,15 +17,24 @@
 </head>
 <body>
   <header>
-    <a href="<?= $BASE_URL ?>" id="logo">
-      <img src="<?= $BASE_URL ?>/img/logo.png" alt="Blog Codar">
+    <a href="WhatsApp_Image_2023-10-26_at_09.43.57-removebg-preview.png" id="logo">
+      <img src="WhatsApp_Image_2023-10-26_at_09.43.57-removebg-preview.png" alt="Blog Codar" class="img">
     </a>
     <nav>
       <ul id="navbar">
         <li><a href="<?= $BASE_URL ?>" class="nav-link">Home</a></li>
         <li><a href="#" class="nav-link">Categorias</a></li>
-        <li><a href="" class="nav-link">Sobre</a></li>
+        <li><a href="sobre.php" class="nav-link">Sobre</a></li>
         <li><a href="<?= $BASE_URL ?>contato.php" class="nav-link">Contato</a></li>
       </ul>
     </nav>
   </header>
+
+  <style>
+
+    .img{
+
+      width: 40px;
+    }
+
+  </style>
