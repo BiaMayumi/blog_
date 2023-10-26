@@ -1,7 +1,7 @@
 <?php
   include_once("helpers/url.php");
-  include_once("data/posts.php");
-  include_once("data/categories.php");
+  include_once("helpers/index.php");
+  include_once("helpers/categories.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -10,7 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PROFISSIONAL DE PIJAMA </title>
   <!-- ESTILOS DO PROJETO -->
-  <link rel="stylesheet" href="<?= $BASE_URL ?>/css/styles.css">
+  <link rel="stylesheet" href="<?= $BASE_URL ?>styles.css">
   <!-- GOOGLE FONTS -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
