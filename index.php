@@ -83,8 +83,20 @@
             </div>
         </section>
     </main>
-    <footer>
-        <p><?php echo "© " . date("Y") . " - Profissional de Pijama"; ?></p>
-    </footer>
+    <style>
+        /* Estilo para o footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 35px;
+        }
+    </style>
+
+<footer>
+    <p>&copy; 2023 Profissional de Pijama. Todos os direitos reservados.</p>
+    
+</footer>
+
 </body>
 </html>
