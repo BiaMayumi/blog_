@@ -86,6 +86,90 @@
             </div>
         </section>
     </main>
+      <style>
+        /* Estilo para a aba de mensagem fechada */
+        #mensagem {
+            display: none;
+            background-color: #333;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            right: 20px;
+            padding: 10px;
+            border-radius: 5px 5px 0 0;
+            cursor: pointer;
+        }
+
+        /* Estilo para o botão de fechar */
+        #fechar {
+            color: #fff;
+            float: right;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<style>
+    /* Estilo para a aba redonda fechada */
+    .aba {
+        width: 50px;
+        height: 50px;
+        background-color: #bdc5cf; /* Cor de fundo */
+        color: #fff; /* Cor do texto */
+        border-radius: 50%; /* Deixa a aba redonda */
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    /* Estilo para a caixa de mensagem */
+    .mensagem-box {
+        width: 300px;
+        height: 200px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        position: fixed;
+        bottom: 80px;
+        right: 20px;
+        display: none;
+    }
+
+    /* Estilo para o botão de fechar */
+    .fechar {
+        color: #000000;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+    }
+
+</style>
+<div class="aba" onclick="abrirMensagem()">M</div>
+
+<!-- Caixa de mensagem -->
+<div class="mensagem-box" id="caixaMensagem">
+    <span class="fechar" onclick="fecharMensagem()">X</span>
+    <p>Escreva sua mensagem aqui:</p>
+    <form method="post" action="processar_mensagem.php">
+        <textarea name="mensagem" rows="5" cols="30"></textarea>
+        <br>
+        <div class="enviar"></div>  <input type="submit" value="Enviar">
+    </form>
+</div>
+
+<script>
+    function abrirMensagem() {
+        document.getElementById("caixaMensagem").style.display = "block";
+    }
+
+    function fecharMensagem() {
+        document.getElementById("caixaMensagem").style.display = "none";
+    }
+</script>
     <style>
         /* Estilo para o footer */
         footer {
@@ -98,7 +182,7 @@
 
 <footer>
     <p>&copy; 2023 Profissional de Pijama. Todos os direitos reservados.</p>
-    
+
 </footer>
 
 </body>
