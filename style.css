@@ -110,7 +110,7 @@ h1 {
 }
 
 .btn:hover {
-    background-color: #0056b3; /* Mudar a cor ao passar o mouse */
+    background-color: #3333; /* Mudar a cor ao passar o mouse */
 }
 
 /* Estilos para o rodapé */
@@ -129,4 +129,84 @@ a {
 
 a:hover {
     color: #555;
+}
+
+/* Estilos para a seção de depoimentos */
+#testimonials {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Estilos para cada depoimento */
+.testimonial {
+    display: inline-block;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #f9f9f9; /* Cor de fundo levemente cinza */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    text-align: left;
+    font-family: 'Poppins', sans-serif; /* Usando a fonte Poppins */
+    position: relative; /* Para posicionar elementos filhos */
+}
+
+.testimonial:before {
+    content: "\201C"; /* Adiciona aspas no início do depoimento */
+    font-size: 40px;
+    color: #0077b6; /* Cor das aspas */
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.testimonial img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.testimonial p {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Estilos para o último depoimento */
+.testimonial:last-child {
+    margin-right: 0;
+}
+
+/* Adicione um efeito de transição sutil */
+.testimonial:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos para o título da seção de depoimentos */
+#testimonials h2 {
+    font-size: 28px; /* Tamanho maior para o título dos depoimentos */
+    margin-bottom: 20px;
+    color: #18384a; /* Cor do título */
+    text-transform: uppercase;
+}
+
+/* Estilos para a citação no depoimento */
+.testimonial blockquote {
+    font-style: italic;
+    margin: 10px 0;
+}
+
+/* Estilos para o nome da pessoa que deu o depoimento */
+.testimonial .author {
+    font-weight: bold;
+    font-size: 18px;
+    color: #333; /* Cor do nome */
+    margin-top: 10px;
+}
+
+/* Estilos para o cargo da pessoa que deu o depoimento */
+.testimonial .position {
+    font-size: 14px;
+    color: #777;
+    margin-top: 5px;
 }
