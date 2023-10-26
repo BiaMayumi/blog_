@@ -1,16 +1,15 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 *{
     margin: 0;
     padding: 0;
-    /* font-family: 'Montserrat', sans-serif; */
     font-family: 'Poppins', sans-serif;
 }
 
 h1{
     text-align: center;
     margin-top: 2em;
+    color: #333;
 }
 
 h3{
@@ -27,6 +26,7 @@ h3{
     margin-left: 2em;
     box-shadow: 4px 4px 2px #1c1c1c70;
     margin-top: 5em;
+    font-weight: 500;
 }
 
 p{
@@ -36,7 +36,7 @@ p{
 }
 
 .homeoffice2{
-    background-color: #d9d0c7;
+    background-color: #CCD4DD;
     width: 50%;
     height: 30%;
     border-radius: 10px;
@@ -44,6 +44,7 @@ p{
     float: right;
     margin-right: 2em;
     box-shadow: 4px 4px 2px #1c1c1c70;
+    font-weight: 400;
 }
 
 .imagem img{
