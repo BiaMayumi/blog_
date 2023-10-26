@@ -9,7 +9,21 @@
 <body>
 
 
-    <?php include_once("header.php"); ?>
+    <?php include_once("header.php"); 
+    
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $nome = $_POST["nome"];
+        $sobrenome = $_POST["sobrenome"];
+        $email = $_POST["email"];
+        $mensagem = $_POST["mensagem"];
+    
+        // Aqui você pode adicionar a lógica para processar os dados, enviar e-mails, salvar no banco de dados, etc.
+    
+        // Exemplo de exibição de mensagem de sucesso
+        echo "Obrigado por entrar em contato, $nome $sobrenome! Sua mensagem foi enviada com sucesso para $email.";
+    }
+    
+    ?>
 <form class="form">
     <p class="title">Pagina de contato </p>
     <p class="message">Tem alguma pergunta ou comentário? Ficaremos felizes em ouvir de você. </p>
@@ -37,6 +51,8 @@
     </div> 
         
    
-    <button class="submit">Submit</button>
+    <button class="submit">Enviar</button>
  
 </form>
+
+
