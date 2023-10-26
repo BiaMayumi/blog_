@@ -1,0 +1,132 @@
+/* Reset de estilos para garantir uma base consistente em todos os navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para o corpo da página */
+body {
+    font-family: 'Poppins', sans-serif; /* Adicione uma fonte personalizada (Poppins) */
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header ul {
+    list-style: none;
+}
+
+header ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Estilos para a imagem grande */
+#hero-image {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#hero-image img {
+    max-width: 100%;
+}
+
+/* Estilos para o título e subtítulo */
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    margin-top: 20px;
+    text-align: center;
+    color: #333; /* Cor do título */
+    text-transform: uppercase; /* Transforma o texto em maiúsculas */
+}
+
+#title-container p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #777; /* Cor do subtítulo */
+}
+
+/* Estilos para o contêiner dos cards */
+#card-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.card {
+    width: 18rem;
+    margin: 0 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centralizar o conteúdo dos cards */
+    background-color: #fff; /* Fundo branco para os cards */
+    border-radius: 10px; /* Adicionar bordas arredondadas */
+    overflow: hidden; /* Garantir que a sombra não vaze fora do card */
+}
+
+.card img {
+    max-width: 100%;
+}
+
+.card-body {
+    padding: 10px;
+}
+
+.card-title {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.card-text {
+    font-size: 14px;
+    color: #777;
+}
+
+.btn {
+    display: block;
+    margin-top: 10px;
+    background-color: #777; /* Cor de fundo azul para os botões */
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.2s; /* Adicionar transição suave de cor ao passar o mouse */
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Mudar a cor ao passar o mouse */
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Estilos para links */
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #555;
+}
