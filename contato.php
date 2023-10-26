@@ -11,51 +11,47 @@
 
     <?php include_once("header.php"); 
     
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $nome = $_POST["nome"];
-        $sobrenome = $_POST["sobrenome"];
-        $email = $_POST["email"];
-        $mensagem = $_POST["mensagem"];
-    
-        // Aqui você pode adicionar a lógica para processar os dados, enviar e-mails, salvar no banco de dados, etc.
-    
-        // Exemplo de exibição de mensagem de sucesso
-        echo "Obrigado por entrar em contato, $nome $sobrenome! Sua mensagem foi enviada com sucesso para $email.";
-    }
     
     ?>
-<form class="form">
-    <p class="title">Pagina de contato </p>
-    <p class="message">Tem alguma pergunta ou comentário? Ficaremos felizes em ouvir de você. </p>
+    
+    <form class="form" method="POST" action="processar_formulario.php">
+        <p class="title">Página de Contato</p>
+        <p class="message">Tem alguma pergunta ou comentário? Ficaremos felizes em ouvir de você.</p>
         <div class="flex">
+            <label>
+                <input required="" placeholder="" type="text" class="input" name="nome">
+                <span>Nome</span>
+            </label>
+    
+            <label>
+                <input required="" placeholder="" type="text" class="input" name="sobrenome">
+                <span>Sobrenome</span>
+            </label>
+        </div>
+    
         <label>
-            <input required="" placeholder="" type="text" class="input">
-            <span>Nome</span>
+            <input required="" placeholder="" type="email" class="input" name="email">
+            <span>Email</span>
         </label>
-
+    
         <label>
-            <input required="" placeholder="" type="text" class="input">
-            <span>Sobrenome</span>
-        </label>
-    </div>  
-            
-    <label>
-        <input required="" placeholder="" type="email" class="input">
-        <span>Email</span>
-    </label> 
-
-    <label>
-            <input required="" placeholder="" type="text" class="input">
+            <input required="" placeholder="" type="text" class="input" name="mensagem">
             <span>Mensagem</span>
         </label>
-    </div> 
-        
+        </div>
+    
+        <button class="submit">Enviar</button>
+    </form>
+    
+    </body>
+    </html>
+    
+    
+    
+    
+    
+    
+    
    
 
-
     
-    <button class="submit">Enviar</button>
- 
-</form>
-
-
