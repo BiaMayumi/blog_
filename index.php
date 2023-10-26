@@ -7,17 +7,14 @@
     <title>PROFISSIONAL DE PIJAMA</title>
 </head>
 <body>
+
+
+<?php include_once("header.php"); 
+    
+    
+    ?>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+   
     <!-- Título e Subtítulo -->
     <section id="title-container">
         <h1>Profissional de Pijama</h1>
