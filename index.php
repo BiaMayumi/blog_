@@ -36,7 +36,7 @@
                     <h5 class="card-title">O que é o home office?</h5>
                     <br>
                     <p class="card-text">Você conhece essa modalidade? Através desse post venha descobrir tudo sobre o home office.</p>
-                    <a href="#" class="btn btn-primary">Ver</a>
+                    <a href="categoria1.php" class="btn btn-primary">Ver</a>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
