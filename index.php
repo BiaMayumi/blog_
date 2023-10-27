@@ -45,7 +45,7 @@
                     <h5 class="card-title">5 pontos positivos e negativos do home office</h5>
                     <br>
                     <p class="card-text">Como nem tudo são flores, trabalhar remotamente tem seus malefícios (e seus benefícios também), venha descobrir quais são!</p>
-                    <a href="#" class="btn btn-primary">Ver</a>
+                    <a href="5pontos.php" class="btn btn-primary">Ver</a>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
