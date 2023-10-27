@@ -28,6 +28,16 @@
         <div>
             <h1>CATEGORIAS</h1>
         </div>
+        <script>
+    const scrollToCategoriasButton = document.getElementById("scrollToCategoriasButton");
+  
+    scrollToCategoriasButton.addEventListener("click", () => {
+      window.scrollTo({
+        top: 1000,
+        behavior: "smooth",
+      });
+    });
+    </script>
         <!-- Três cards -->
         <section id="card-container">
             <div class="card" style="width: 18rem;">

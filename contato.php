@@ -14,7 +14,7 @@
     
     ?>
     
-    <form class="form" method="POST" action="processar_formulario.php">
+    <form class="form" method="POST" action="processar_mensagem.php">
         <p class="title">Página de Contato</p>
         <p class="message">Tem alguma pergunta ou comentário? Ficaremos felizes em ouvir de você.</p>
         <div class="flex">
@@ -40,7 +40,7 @@
         </label>
         </div>
     
-        <button class="submit">Enviar</button>
+        <a href="processar_mensagem.php"><button class="submit">Enviar</button></a>
     </form>
     
     </body>
