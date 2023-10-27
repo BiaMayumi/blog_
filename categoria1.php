@@ -24,14 +24,24 @@
     <div class="imagem2">
         <img src="img/ft1.webp">
     </div>
-    <a href="calculadora.php"><button class="Btn">
+    <hr>
+    <div class="noticia-cat1">
+    <h1>Pessoas que trabalham em regime de home office ganham 2,7 vezes mais que a média, diz IBGE</h1>
+    <h3>O motivo é porque os trabalhadores remotos costumam ter mais escolaridade e cargos em empresas que pagam melhor.</h3>
+    <p>"Um levantamento publicado pelo IBGE nesta quarta-feira (25) mostrou que as pessoas que trabalham em regime de home office foram remuneradas bem acima da média no último ano. O motivo, de acordo com a pesquisa, é porque os trabalhadores remotos costumam ter mais escolaridade e cargos em empresas que pagam melhor."</p>
+    <p>"Os números, relacionados ao trabalho remoto de forma geral, indicaram que quem integra este grupo está ganhando quase três vezes mais que a média das pessoas empregadas. Os dados foram extraídos do PNAD (Pesquisa por Amostra de Domicílios).
+    A modalidade remota de trabalho, que ganhou força desde o início da pandemia da Covid em 2020, continua sendo bastante utilizada: 9,5 milhões de pessoas trabalharam desta forma em 2022. Destes, quase 7,5 milhões realizam o teletrabalho."</p>
+    <a href="https://g1.globo.com/jornal-hoje/noticia/2023/10/25/pessoas-que-trabalham-em-regime-de-home-office-ganham-27-vezes-mais-que-a-media-diz-ibge.ghtml">Leia mais</a>
+</div>
+<hr>
+<div class="explicacao">
+    <h2>Para te ajudar a controlar seus gastos com o Home Office, preparamos uma calculadora para te auxiliar nessa jornada!</h2>
+    <h3>Para utiliza-la só clicar nesse botão a direita do site</h3>
+</div>
+    <button class="Btn" onclick="abrirComoAplicacao();">
         <div class="sign"><svg viewBox="0 0 512 512"><path d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z"></path></svg></div>
         <div class="text">Calcular Gastos</div>
-    </button></a>
-    <!-- <footer>
-        <?php include_once("footer.php"); ?>
-    </footer> -->
-    
+    </button>
     </body>
 </html>
 
@@ -45,4 +55,10 @@
         behavior: "smooth",
       });
     });
+</script>
+
+<script>
+    function abrirComoAplicacao() {
+    window.open('http://localhost/blog_/calculadora.php', 'Calculadora', 'width=300,height=400,location=no,menubar=no,toolbar=no');
+    }
 </script>

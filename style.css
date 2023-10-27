@@ -7,7 +7,7 @@
 
 /* Estilos para o corpo da página */
 body {
-    font-family: 'Poppins', sans-serif; /* Adicione uma fonte personalizada (Poppins) */
+    font-family: 'Poppins', sans-serif; 
     background-color: #f0f0f0;
     margin: 0;
     padding: 0;
@@ -188,4 +188,98 @@ a:hover {
     font-size: 14px;
     color: #777;
     margin-top: 5px;
+}
+
+.btn2 {
+    width: 140px;
+    height: 56px;
+    overflow: hidden;
+    border: none;
+    color: #000;
+    background: none;
+    position: relative;
+    padding-bottom: 2em;
+    margin-left: 2em;
+    padding-top: 2em;
+  }
+  
+  .btn2 > div,.btn2  > svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+  } 
+  
+  .btn2:before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    background: currentColor;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .btn2:hover:before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  .btn2 .clone2 > *,.btn2 .text2 > * {
+    opacity: 1;
+    font-size: 1.3rem;
+    transition: 0.2s;
+    margin-left: 4px;
+  }
+  
+  .btn2 .clone2 > * {
+    transform: translateY(60px);
+  }
+  
+  .btn2:hover .clone2 > * {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+  }
+  
+  .btn2:hover .text2 > * {
+    opacity: 1;
+    transform: translateY(-60px);
+    transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+  }
+  
+  .btn2:hover .clone2 > :nth-child(1) {
+    transition-delay: 0.15s;
+  }
+  
+  .btn2:hover .clone2 > :nth-child(2) {
+    transition-delay: 0.2s;
+  }
+  
+  .btn2:hover .clone2 > :nth-child(3) {
+    transition-delay: 0.25s;
+  }
+  
+  .btn2:hover .clone2 > :nth-child(4) {
+    transition-delay: 0.3s;
+  }
+  /* icon style and hover */
+  .btn2  svg {
+    width: 20px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%) rotate(-50deg);
+    transition: 0.2s ease-out;
+  }
+  
+  .btn2 :hover svg {
+    transform: translateY(-50%) rotate(-90deg);
+  }
+
+.explicacao{
+    text-align: center;
+
 }

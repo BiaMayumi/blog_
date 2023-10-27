@@ -200,3 +200,26 @@ hr {
 }
 }
 
+.noticia-cat1 h1{
+    text-align: center;
+    font-size: 1.7em;
+    color: #333;
+}
+
+.noticia-cat1 p{
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.noticia-cat1 a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.explicacao h2{
+    text-align: center;
+    color: #333;
+    padding-top: 2em;
+    font-size: 1.2em;
+}

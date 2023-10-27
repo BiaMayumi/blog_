@@ -82,7 +82,33 @@
                 </div>
             </div>
         </section>
+        <button class="btn2" id="scrollToTopButton">
+    <div class="text2" >
+        <span>Back</span>
+        <span>to</span>
+        <span>top</span>
+    </div>
+    <div class="clone2">
+        <span>Back</span>
+        <span>to</span>
+        <span>top</span>
+    </div>
+    <svg width="20px" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+    </svg>
+</button>
+<script>
+    const scrollToTopButton = document.getElementById("scrollToTopButton");
+  
+    scrollToTopButton.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    });
+</script>
     </main>
+    
       <style>
         /* Estilo para a aba de mensagem fechada */
         #mensagem {
@@ -143,10 +169,8 @@
         right: 10px;
         cursor: pointer;
     }
-
 </style>
 <div class="aba" onclick="abrirMensagem()">M</div>
-
 <!-- Caixa de mensagem -->
 <div class="mensagem-box" id="caixaMensagem">
     <span class="fechar" onclick="fecharMensagem()">X</span>
@@ -157,7 +181,6 @@
         <div class="enviar"></div>  <input type="submit" value="Enviar">
     </form>
 </div>
-
 <script>
     function abrirMensagem() {
         document.getElementById("caixaMensagem").style.display = "block";
@@ -176,11 +199,10 @@
             padding: 35px;
         }
     </style>
-
 <footer>
     <p>&copy; 2023 Profissional de Pijama. Todos os direitos reservados.</p>
 
 </footer>
-
 </body>
 </html>
+
