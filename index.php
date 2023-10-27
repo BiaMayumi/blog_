@@ -54,7 +54,7 @@
                     <h5 class="card-title">Estratégias para dominar o trabalho remoto</h5>
                     <br>
                     <p class="card-text">Através deste post fique por dentro das melhores dicas e curiosidades que irão te ajudar a se desenvolver como profissional.</p>
-                    <a href="#" class="btn btn-primary">Ver</a>
+                    <a href="categoria3.php" class="btn btn-primary">Ver</a>
                 </div>
             </div>
         </section>
